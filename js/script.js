@@ -138,47 +138,66 @@ new Swiper('.gallery-slider', {
 		el: '.gallery-slider__pagination',
 		clickable: true,
 	},
+	loop: true,
 });
 
 let dotLocation1 = document.querySelector('.dot-location-1');
 let dotLocation2 = document.querySelector('.dot-location-2');
 let dotLocation3 = document.querySelector('.dot-location-3');
 let dotLocation4 = document.querySelector('.dot-location-4');
+let locations = document.querySelectorAll('.location');
 let location1 = document.querySelector('.location-1');
 let location2 = document.querySelector('.location-2');
 let location3 = document.querySelector('.location-3');
 let location4 = document.querySelector('.location-4');
 let locationMap = document.querySelector('.locations__map');
 let locationsContent = document.querySelector('.locations__content');
-locationMap.onmouseover = function (event) {
+locationMap.onclick = function (event) {
 	if (event.target.closest('.dot-location-1')) {
+		for (let i = 0; i < locations.length; i++) {
+			locations[i].classList.remove('show-location');
+		}
 		location1.classList.add('show-location');
 	}
-	if (event.target.closest('.dot-location-2')) {
+	else if (event.target.closest('.dot-location-2')) {
+		for (let i = 0; i < locations.length; i++) {
+			locations[i].classList.remove('show-location');
+		}
 		location2.classList.add('show-location');
 	}
-	if (event.target.closest('.dot-location-3')) {
+	else if (event.target.closest('.dot-location-3')) {
+		for (let i = 0; i < locations.length; i++) {
+			locations[i].classList.remove('show-location');
+		}
 		location3.classList.add('show-location');
 	}
-	if (event.target.closest('.dot-location-4')) {
+	else if (event.target.closest('.dot-location-4')) {
+		for (let i = 0; i < locations.length; i++) {
+			locations[i].classList.remove('show-location');
+		}
 		location4.classList.add('show-location');
-	}
-};
-
-locationMap.onmouseout = function (event) {
-	if (event.target.closest('.dot-location-1')) {
+	} else {
 		location1.classList.remove('show-location');
-	}
-	if (event.target.closest('.dot-location-2')) {
 		location2.classList.remove('show-location');
-	}
-	if (event.target.closest('.dot-location-3')) {
 		location3.classList.remove('show-location');
-	}
-	if (event.target.closest('.dot-location-4')) {
 		location4.classList.remove('show-location');
 	}
 };
+
+// locationMap.onmouseout = function (event) {
+// 	if (event.target.closest('.dot-location-1')) {
+// 		location1.classList.remove('show-location');
+// 	}
+// 	if (event.target.closest('.dot-location-2')) {
+// 		location2.classList.remove('show-location');
+// 	}
+// 	if (event.target.closest('.dot-location-3')) {
+// 		location3.classList.remove('show-location');
+// 	}
+// 	if (event.target.closest('.dot-location-4')) {
+// 		location4.classList.remove('show-location');
+// 	}
+// };
 
 if (window.innerWidth < 768) {
 	locationsContent.append(location1);

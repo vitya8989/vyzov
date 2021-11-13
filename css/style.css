@@ -325,7 +325,7 @@ main {
 }
 .main {
   min-height: calc(100vh - 150px);
-  background: url(../img/main-bg2.jpg) center/cover no-repeat
+  background: url(../img/main/main-bg2.jpg) center/cover no-repeat
 }
 .main__content {
   display: -webkit-box;
@@ -730,7 +730,7 @@ main {
   top: -15px
 }
 .locations__map {
-  background: url(../img/map-bg.jpg) center/contain no-repeat;
+  background: url(../img/main/map-bg.jpg) center/contain no-repeat;
   width: 1292px;
   height: 859px;
   margin: 0 auto;
@@ -746,6 +746,7 @@ main {
   position: relative
 }
 .locations__map img {
+  pointer-events: none;
   width: 1022px;
   height: 716px
 }
@@ -1130,6 +1131,9 @@ main {
   visibility: visible;
   opacity: 1
 }
+.donut-segment {
+  border-radius: 50%
+}
 @media (max-width:1292px) {
   .locations__map {
     width: 1024px;
@@ -1239,7 +1243,7 @@ main {
 }
 @media (max-width:1022px) {
   .main {
-    background: url(../img/main-bg1.jpg) center/cover no-repeat
+    background: url(../img/main/main-bg1.jpg) center/cover no-repeat
   }
   .main__content {
     max-width: 530px
@@ -1745,17 +1749,17 @@ main {
   background: url(../img/icons/person.webp) 100% 0/20px 20px no-repeat
 }
 .webp .main {
-  background: url(../img/main-bg2.webp) center/cover no-repeat
+  background: url(../img/main/main-bg2.webp) center/cover no-repeat
 }
 .webp .locations__map {
-  background: url(../img/map-bg.webp) center/contain no-repeat
+  background: url(../img/main/map-bg.webp) center/contain no-repeat
 }
 .webp .dot-location {
   background: url(../img/icons/map-dot.webp) 0 0/100% 100% no-repeat
 }
 @media (max-width:1022px) {
   .webp .main {
-    background: url(../img/main-bg1.webp) center/cover no-repeat
+    background: url(../img/main/main-bg1.webp) center/cover no-repeat
   }
 }
 @media (max-width:767px) {
