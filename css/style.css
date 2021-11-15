@@ -744,7 +744,7 @@ main {
   top: -15px
 }
 .locations__map {
-  background: url(../img/main/map-bg.jpg) center/contain no-repeat;
+  background: url(../img/main/map-bg.png) center/contain no-repeat;
   width: 1292px;
   height: 859px;
   margin: 0 auto;
@@ -839,7 +839,8 @@ main {
   background: url(../img/icons/map-dot.png) 0 0/100% 100% no-repeat;
   position: absolute;
   -webkit-animation: scale-wave 1.5s linear infinite;
-  animation: scale-wave 1.5s linear infinite
+  animation: scale-wave 1.5s linear infinite;
+  cursor: pointer
 }
 .dot-location-1 {
   top: 305px;
@@ -2288,6 +2289,9 @@ main {
   }
 }
 @media (max-width:480px) {
+  .about__texts {
+    padding: 0 20px 83px 20px
+  }
   .about__text {
     max-width: 220px;
     font-size: 12px;
@@ -2309,32 +2313,5 @@ main {
     background: url(../img/icons/succes.svg) 260px center/0 0 no-repeat,-webkit-gradient(linear,left top,right top,from(#1c732b),to(#15c411));
     background: url(../img/icons/succes.svg) 260px center/0 0 no-repeat,-o-linear-gradient(left,#1c732b 0,#15c411 100%);
     background: url(../img/icons/succes.svg) 260px center/0 0 no-repeat,linear-gradient(90deg,#1c732b 0,#15c411 100%)
-  }
-}
-.webp .header-top__private-btn {
-  background: url(../img/icons/person.webp) 100% 0/20px 20px no-repeat
-}
-.webp .main {
-  background: url(../img/main/main-bg2.webp) center/cover no-repeat
-}
-.webp .locations__map {
-  background: url(../img/main/map-bg.webp) center/contain no-repeat
-}
-.webp .dot-location {
-  background: url(../img/icons/map-dot.webp) 0 0/100% 100% no-repeat
-}
-@media (max-width:1022px) {
-  .webp .main {
-    background: url(../img/main/main-bg1.webp) center/cover no-repeat
-  }
-}
-@media (max-width:767px) {
-  .webp .location__title {
-    background: url(../img/icons/map-dot.webp) 2px 7px/10px 10px no-repeat
-  }
-}
-@media (max-width:767px) {
-  .webp .location-1 .location__title {
-    background: url(../img/icons/map-dot.webp) 0 5px/15px 15px no-repeat
   }
 }

@@ -1,1 +1,5 @@
-<svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="11.5" stroke="#13328A"/><path transform="scale(1.02307 .97639) rotate(-45 24.792 .99)" stroke="#13328A" d="M0-.5h14.774"/><path transform="matrix(.72342 .69041 -.72342 .69041 6 7.2)" stroke="#13328A" d="M0-.5h14.774"/></svg>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="12" cy="12" r="11.5" stroke="#13328A"/>
+<line y1="-0.5" x2="14.7737" y2="-0.5" transform="matrix(0.723418 -0.690411 0.723418 0.690411 6.71289 17.4001)" stroke="#13328A"/>
+<line y1="-0.5" x2="14.7737" y2="-0.5" transform="matrix(0.723418 0.690411 -0.723418 0.690411 6 7.2002)" stroke="#13328A"/>
+</svg>
